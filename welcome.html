@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping App</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
        
     </style>
@@ -92,38 +92,7 @@
     </footer>
 
     <script>
-        function setCookie(name, value, days) {  
-    var date = new Date();  
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));  
-    var expires = "; expires=" + date.toUTCString();  
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";  
-}  
   
-// 假设你有一个登录表单，并且已经验证了用户名和密码  
-// 这只是一个示例，不要在生产环境中使用！  
-var username = "exampleUser";  
-var password = "insecurePassword"; // 注意：这只是一个示例，不要这样做！  
-  
-// 警告：不要这样做！这只是一个不安全的示例！  
-setCookie('username_for_demo', username, 1); // 1天后过期  
-setCookie('password_for_demo', password, 1); // 同样，这很不安全！
-function getCookie(name) {  
-    var nameEQ = name + "=";  
-    var ca = document.cookie.split(';');  
-    for (var i = 0; i < ca.length; i++) {  
-        var c = ca[i];  
-        while (c.charAt(0) === ' ') c = c.substring(1, c.length);  
-        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);  
-    }  
-    return null;  
-}  
-  
-// 读取之前设置的cookie（仅用于演示）  
-var usernameFromCookie = getCookie('username_for_demo');  
-var passwordFromCookie = getCookie('password_for_demo');  
-  
-console.log('Username from cookie:', usernameFromCookie);  
-console.log('Password from cookie:', passwordFromCookie); // 警告：不要在生产环境中打印密码！
         var users = [];
 
         function showPage(pageId) {

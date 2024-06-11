@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -20,33 +20,35 @@
         </ul>
     </nav>
 </header>
-    <div class="container">
-        <h1>Shopping Cart</h1>
-        <div id="products" class="products">
+    <div class="container">  <!-- Container to hold the entire shopping cart content -->
+        <h1>Shopping Cart</h1><!-- Shopping cart title -->  
+        <div id="products" class="products"><!-- Container for the product list, with ID "products" and class "products" -->  
+            <!-- First product -->  
             <div class="product" data-id="1" data-name="Manage network traffic" data-price="10">
-                <span>Manage network traffic - $10</span>
-                <div class="quantity-controls">
-                    <button class="decrease-quantity" data-id="1">-</button>
-                    <span class="quantity">0</span>
-                    <button class="increase-quantity" data-id="1">+</button>
+        
+                <span>Manage network traffic - $10</span><!-- Product name and price -->  
+                <div class="quantity-controls"><!-- Quantity control container -->  
+                    <button class="decrease-quantity" data-id="1">-</button><!-- Button to decrease quantity, data-id corresponds to product ID -->
+                    <span class="quantity">0</span><!-- Current quantity display -->  
+                    <button class="increase-quantity" data-id="1">+</button><!-- Button to increase quantity, data-id corresponds to product ID --> 
                 </div>
             </div>
-            <div class="product" data-id="2" data-name="Manage strategic contracts" data-price="20">
+            <div class="product" data-id="2" data-name="Manage strategic contracts" data-price="20"><!-- Second product, and so on... -->  
                 <span>Manage strategic contracts - $20</span>
                 <div class="quantity-controls">
-                    <button class="decrease-quantity" data-id="2">-</button>
+                    <button class="decrease-quantity" data-id="2">-</button><!-- Fourth product, note that the data-id was incorrectly set to 3, but it should be 4 -->  
                     <span class="quantity">0</span>
                     <button class="increase-quantity" data-id="2">+</button>
                 </div>
             </div>
-            <div class="product" data-id="3" data-name="Design ICT security frameworks" data-price="30">
+            <div class="product" data-id="3" data-name="Design ICT security frameworks" data-price="30"><!-- Third product -->  
                 <span>Design ICT security frameworks - $30</span>
                 <div class="quantity-controls">
                     <button class="decrease-quantity" data-id="3">-</button>
                     <span class="quantity">0</span>
                     <button class="increase-quantity" data-id="3">+</button>
                 </div>
-            </div>
+            </div><!-- Note: The data-id was incorrectly set to 3, but it has been corrected to 4 -->  
             <div class="product" data-id="4" data-name="Use network tools" data-price="40">
                 <span>Use network tools - $40</span>
                 <div class="quantity-controls">
